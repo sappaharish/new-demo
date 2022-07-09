@@ -1,19 +1,25 @@
 pipeline {
-    agent any 
+    agent any
+
     stages {
-        stage('Build') { 
+        stage('Hello world') {
             steps {
-                echo "building has been started" 
-            }
-    }
-        stage('Test') { 
-            steps {
-                echo "testing has been started"
+                echo 'Hello World it '
             }
         }
-        stage('Deploy') { 
-            steps {
-                echo "testing has been started"
+        stage('git working'){
+            steps{
+                echo 'cloning git'
+            }
+        }
+        stage('testing done'){
+            steps{
+                echo 'testing the project'
+            }
+        }
+        stage('deploying started'){
+            steps{
+                echo 'trying to deploy'
             }
         }
     }
